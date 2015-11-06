@@ -26,7 +26,7 @@ module PopularPages
 
     def access_token
       authorization =
-        Google::Auth.get_application_default([ENV['GOOGLE_AUTH_PATTERN']])
+        Google::Auth.get_application_default(['https://www.googleapis.com/auth/analytics'])
       return unless authorization
       authorization.apply!({})
       authorization.access_token

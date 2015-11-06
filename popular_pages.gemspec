@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'popular_pages'
-  s.version     = '1.0.1'
-  s.date        = '2015-11-05'
+  s.version     = '1.0.2'
+  s.date        = '2015-11-06'
   s.summary     = 'Gem to extract Google analytics metrics for popular pages'
   s.description = 'Gem to extract Google analytics metrics for popular pages'
   s.authors     = ['Pablo Gonzaga', 'Oscar Siniscalchi']
