@@ -34,9 +34,13 @@ module PopularPages
 
     def parse_response(body)
       response = []
-      JSON.parse(body)['rows'].each do |row|
+      body_hash = JSON.parse(body)
+      return response unless body_hash['rows']
+
+      body_hash['rows'].each do |row|
         response << { path: row[0], views: row[1] }
       end
+
       response
     end
   end
